@@ -4,7 +4,7 @@ const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 const Render = Matter.Render;
 
-var dustbin, paper,ground
+var dustbino, papero,groundo
 var world;
 function setup() {
 	createCanvas(1600, 700);
@@ -17,7 +17,6 @@ function setup() {
 	groundo=new ground(width/2,670,width,20);
 	paperto=new paper(200,450,70);
 	dustbino=new dustbin(1200,650);
-	//Create a Ground
 	
 
 	var render = Render.create({
@@ -38,15 +37,15 @@ function draw() {
   rectMode(CENTER);
   background(230);
   
-  paper.display();
-  ground.display();
-  dustbin.display();
+  papero.display();
+  groundo.display();
+  dustbino.display();
 }
 
 function keyPressed() {
   	if (keyCode === UP_ARROW) {
 
-    	Matter.Body.applyForce(paper.body,paper.body.position,{x:130,y:-145});
+    	Matter.Body.applyForce(papero.body,papero.body.position,{x:130,y:-145});
     
   	}
 }
