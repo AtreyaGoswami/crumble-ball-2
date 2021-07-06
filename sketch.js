@@ -14,7 +14,7 @@ function setup() {
 	engine = Engine.create();
 	world = engine.world;
 	
-	groundo=new ground(width/2,670,width,20);
+	
 	paperto=new paper(200,450,70);
 	dustbino=new dustbin(1200,650);
 	
@@ -38,7 +38,7 @@ function draw() {
   background(230);
   
   papero.display();
-  groundo.display();
+ 
   dustbino.display();
 }
 
