@@ -7,8 +7,7 @@ class paper
 			restitution:0.3,
 			friction:0,
 			density:1.2
-
-			
+                 
 			}
 		this.x=x;
 		this.y=y;
@@ -36,4 +35,3 @@ class paper
 	}
 
 }
-				
